@@ -9,10 +9,10 @@ export default function User() {
   const fetch = useUserStore(state => state.fetch)
   const resetUser = useUserStore(state => state.reset)
   // useEffect(() => {
-  //   fetch('http://localhost:3000/api/users/vercel')
+  //   fetch(`${process.env.API_URL}/api/users/vercel`)
   // }, [])
   function handleFetch() {
-    fetch('http://localhost:3000/api/users/vercel')
+    fetch(`${process.env.API_URL}/api/users/vercel`)
   }
 
   return (
@@ -62,10 +62,10 @@ export default function User() {
   const fetch = useUserStore(state => state.fetch)
   const resetUser = useUserStore(state => state.reset)
   // useEffect(() => {
-  //   fetch('http://localhost:3000/api/users/vercel')
+  //   fetch('\${process.env.API_URL}/api/users/vercel')
   // }, [])
   function handleFetch() {
-    fetch('http://localhost:3000/api/users/vercel')
+    fetch('\${process.env.API_URL}/api/users/vercel')
   }
 
   return (

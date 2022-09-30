@@ -11,7 +11,7 @@ export default function Repo() {
   const fetchRepo = useRepoStore(state => state.fetchRepo)
   const resetRepo = useRepoStore(state => state.resetRepo)
   // useEffect(() => {
-  //   fetchRepo('http://localhost:3000/api/repos/vercel')
+  //   fetchRepo(`${process.env.API_URL}/api/users/vercel`)
   // }, [])
   function handleFetchRepo(param) {
     fetchRepo(param)

@@ -2,8 +2,8 @@
 const nextConfig = {
   env: {
     token: "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",
-    API_URL: "http://localhost:3000",
-    // API_URL: "https://next-swr-lake.vercel.app",
+    // API_URL: "http://localhost:3000",
+    API_URL: "https://next-zustand.vercel.app/",
   },
   reactStrictMode: true,
   images: {

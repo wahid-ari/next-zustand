@@ -65,7 +65,7 @@ export default function Home() {
   const fetch = useUserStore(state => state.fetch)
   const resetUser = useUserStore(state => state.reset)
   // useEffect(() => {
-  //   fetch('http://localhost:3000/api/users/vercel')
+  //   fetch(`${process.env.API_URL}/api/users/vercel`)
   // }, [])
   function handleFetch() {
     fetch(`${process.env.API_URL}/api/users/vercel`)
@@ -144,7 +144,7 @@ export default function Home() {
   const fetchRepo = useRepoStore(state => state.fetchRepo)
   const resetRepo = useRepoStore(state => state.resetRepo)
   // useEffect(() => {
-  //   fetchRepo('http://localhost:3000/api/repos/vercel')
+  //   fetchRepo(`${process.env.API_URL}/api/users/vercel`)
   // }, [])
   function handleFetchRepo(param) {
     fetchRepo(param)
